@@ -1,0 +1,292 @@
+/* Universal Styles use Asterisk */
+* {
+  font-family: "Avenir";
+
+  font-size: 18px;
+  margin: 0;
+}
+
+body{
+    background:#f6f6f6;
+}
+
+.nav {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.call-to-action{
+  position: relative;
+  /* margin-top: 60px; */
+}
+
+.menu {
+  text-align: center;
+  display: block;
+}
+
+ul {
+  margin-left: -40px;
+}
+
+li {
+  color: gray;
+  padding: 10px;
+  list-style-type: none;
+}
+
+li:nth-child(odd) {
+  background: #ffffff;
+}
+
+li:nth-child(even) {
+  background: #f2f2f2;
+}
+
+li:hover{
+  background:#dedcdc;
+}
+/* body {
+        background-color: #c1fafd;
+    } */
+
+h1 {
+  color: white;
+  text-align: center;
+  padding:10px 0 30px 0;
+  position:absolute;
+  display:block;
+  text-align:center;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0px;
+  color:#fff;
+}
+
+.quote {
+  text-align: center;
+  padding: 5px 10%;
+  color: darkslategray;
+  background: #ffffff50;
+  font-family:Raleway;
+  font-weight:bold;
+}
+
+.quote span{
+  color: #E91E63;
+}
+
+a {
+  color: rgb(28, 66, 234);
+}
+
+img {
+  width: 100%;
+}
+
+.workshops {
+  /* 
+        Padding: NORTH EAST SOUTH WEST (Never Eat Sour Wheat)
+         */
+  padding: 10px 10px 10px 10px;
+  /* background: rgb(203, 53, 53); */
+  /* width: 100%; */
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.ws-descriptions {
+  /* Padding: North/South West/East */
+  padding: 10px 20px;
+  background: #ebeaea50;
+}
+
+.a,
+.c,
+.e {
+  background: rgb(53, 203, 153);
+}
+
+.b,
+.d,
+.f {
+  background: rgb(30, 162, 219);
+}
+
+/* 'Modules' title */
+.s0 {
+  background: #115db4;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+.s0:hover {
+  background: #093a73;
+}
+
+.s0:after {
+  content: "\02795";
+  content: "\25bc";
+"
+  /* Unicode character for "plus" sign (+) */
+  /* font-size:20px; */
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+  float: right;
+  margin-left: 5px;
+  /* margin-top: -3px; */
+}
+
+.menu-dropdown{
+  padding:20px;
+}
+
+/* .menu-dropdown:after{
+        content:'&#9776';
+    } */
+
+.active:after {
+  content: "\2796";
+  content: "\25b2";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.active .s0:hover {
+  background-color: #ccc;
+}
+/* workshop panels */
+.panel {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.footer{
+  background: #115db4;
+  width: 100%;
+  height:25px;
+}
+
+.footer p {
+  float: right;
+    padding-right: 15px;
+    padding-left: 10px;
+    background: #FF5722;
+}
+/* stick navs */
+#navbar {
+  z-index: 999;
+  color:#fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* 
+.content {
+  padding: 16px;
+} */
+
+/* .sticky + .content {
+  padding-top: 60px;
+} */
+
+/* .s1,
+.s3,
+.s5 {
+  background: #d0d0d0;
+}
+
+.s2,
+.s4 {
+  background: #b2b1b1;
+} */
+
+.sub-items {
+  padding: 10px 10px 10px 10px;
+  color:#fff;
+}
+
+.sub-items:nth-child(odd){
+  background:#ffffff;
+}
+
+.sub-items:nth-child(even){
+  background:#f2f2f2;
+}
+
+.s0 {
+  background: #115db4!important;
+}
+
+/* look at the nested structure. The class points to the <p> tag within it.*/
+.sub-items p {
+  color: #115db4;
+  padding: 10px 20px;
+}
+
+.downloads {
+  color: rgb(166, 38, 235);
+  font-weight: bold;
+}
+
+.videos{
+    background: #00000050;
+}
+strong {
+  color: #115db4;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5f5f5f80; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #e1c212; /* Add a dark-grey background on hover */
+}
+
+/* Screen Size Specific  */
+
+/* Ipad */
+@media only screen and (max-width: 1100px) {
+  body {
+    background: #11b0e5;
+  }
+}
+
+/* Mini Tablet */
+@media only screen and (max-width: 750px) {
+  body {
+    background: lightblue;
+  }
+}
+
+/* inspect Demo */
+/* Small phone size */
+@media only screen and (max-width: 600px) {
+  body {
+    background: #f5c828;
+  }
+}

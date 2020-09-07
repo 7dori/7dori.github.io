@@ -1,0 +1,37 @@
+/* Top - Down --> Biggest screen size to Smallest screen size */
+
+/* Test Inspect Tool and Use responsive as well as demo various options */
+
+/* Great for Mobile Development */
+
+/* The Global Styles has no " @media only screen " screen size specifications */
+
+/*  */
+body{
+    background:tomato;
+}
+
+/* Screen Size Specific  */
+
+/* Ipad */
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: #11b0e5;
+    }
+  }
+
+
+/* Mini Tablet */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+/* inspect Demo */
+/* Small phone size */
+  @media only screen and (max-width: 450px) {
+    body {
+      background-color: #f5c828;
+    }
+  }
