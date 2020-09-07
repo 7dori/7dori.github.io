@@ -153,13 +153,6 @@ a {
   font-weight:bold;
 }
 
-a.slides {
-    color: blue;
-    border: 1px dotted blue;
-    padding: 10px;
-    margin-top: 5px;
-}
-
 img {
   width: 100%;
 }
