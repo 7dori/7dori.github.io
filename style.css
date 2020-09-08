@@ -407,6 +407,7 @@ div#myBtn::after {
 }
 #myBtn:hover {
   background-color: #2c1c4b; 
+  color: teal;
 }
 
 
