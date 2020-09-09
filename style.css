@@ -1,525 +1,415 @@
-/* Universal Styles use Asterisk */
-* {
-  font-family: "Avenir";
-
-  font-size: 18px;
-  margin: 0;
-}
-
-html{
-  --scrollbarBG: #2c1c4b!important;
-  --thumbBG: #009688!important;
-}
-
-
-body{
-    background:#b9dbec;
-}
-
-body::-webkit-scrollbar {
-  width: 11px;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
-body::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
-}
-body::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG) ;
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
-}
-
-.nav {
-  background: white;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.call-to-action{
-  position: relative;
-  /* margin-top: 60px; */
-}
-
-.menu {
-  text-align: center;
-  display: block;
-}
-
-p.intro-text {
-  background: #ffffff80;
-  border-radius: 15px;
-  padding: 30px 40px;
-  text-align: justify;
-  margin: 0 10px;
-}
-
-p.intro-text span{
-  font-weight:bolder;
-  font-size:36px;
-  display:block;
-  text-align:center;
-  color:#575779;
-}
-ul {
-  margin-left: -40px;
-}
-
-li {
-  color: gray;
-  padding: 10px;
-  list-style-type: none;
-}
-
-li:nth-child(odd) {
-  background: #ffffff;
-}
-
-li:nth-child(even) {
-  background: #f2f2f2;
-}
-
-li:hover{
-  background:#dedcdc;
-}
-/* body {
-        background-color: #c1fafd;
-    } */
-
-h1 {
-  color: white;
-  text-align: center;
-  padding:10px 0 30px 0;
-  position:absolute;
-  display:block;
-  text-align:center;
-  font-size: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-span.start-now {
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  display: block;
-  text-align: center;
-  /* font-size: 50px; */
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 6px solid white;
-  border-radius:25px;
-}
-
-span.start-now a{
-  color:white;
-  padding: 30px 30px;
-  font-size: 20px;
-}
-
-span.start-now a:hover{
-  color:purple;
-}
-
-span.start-now:hover{
-  /* color:purple; */
-  background:pink;
-  border: 6px solid pink;
-}
-
-.group:nth-child(odd){
-  background:#e4e5e9;;
-  padding:10px 10px;
-}
-.group:nth-child(even){
-  background:#bcbec8;
-  padding:10px 10px;
-}
-
-.group.intro {
-  background: white!important;
-}
-
-h4 {
-  font-size: 30px;
-  text-align: center;
-  padding: 10px 0px;
-  color:#093a73;
-  height: 100px;
-}
-
-.quote {
-  text-align: center;
-  padding: 10px 40px;
-  font-family: 'Bookman';
-  color: darkslategray;
-  background: #ffffff50;
-  /* font-family:Raleway; */
-  /* font-weight:bold; */
-  font-size:20px;
-  height: 150px;
-}
-
-.quote span{
-  color: #E91E63;
-}
-
-a {
-  color: #616fac;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-img {
-  width: 100%;
-}
-
-.workshops {
-  /* 
-        Padding: NORTH EAST SOUTH WEST (Never Eat Sour Wheat)
-         */
-  padding: 10px 10px 10px 10px;
-  /* background: rgb(203, 53, 53); */
-  /* width: 100%; */
-  /* border-radius: 10px; */
-  margin: 10px 10px;
-  box-shadow: 0 9px 30px -16px #000000;
-  /* background:#d3d6e4; */
-  background:#ffffff
-}
-
-div#workshop1 {
-  border-left: 10px solid #009688;
-}
-
-.ws-descriptions {
-  /* Padding: North/South West/East */
-  padding: 10px 35px;
-  background: #ebeaea50;
-  /* height: 300px; */
-  text-align: justify;
-}
-
-.download-section{
-  padding: 10px 35px;
-  background: #ebeaea50;
-  /* height: 300px; */
-  /* text-align: justify; */
-}
-
-.quote-of-the-day {
-  padding: 15px;
-  margin: 15px;
-  margin: 15px;
-  background: #ffffff50;
-  text-align: center;
-}
-
-.menu-dropdown.s0.menu-color {
-  color: #2c1c4b;
-  background: #2c1c4b!important;
-}
-
-.menu-dropdown.s0.menu-color:after{
-  content: "\2630";
-  text-shadow: 0 0 0 #ffffff;
-  margin-top: -10px;
-}
-
-.menu-dropdown.s0.menu-color.active:after{
-  content: "\00D7";
-  font-size:30px;
-}
-
-/* 'Modules' title */
-.s0 {
-  /* background: #151d4b; */
-  background: #616fac !important;
-  cursor: pointer;
-  transition: 0.4;
-}
-
-
-
-.s0:hover {
-  background: #093a73;
-}
-
-.s0:after {
-  content: "\02795";
-  /* content: "\25bc"; */
-  /* Unicode character for "plus" sign (+) */
-  /* font-size:20px; */
-  color: transparent;
-  text-shadow: 0 0 0 #ffffff;
-  float: right;
-  margin-left: 5px;
-  /* margin-top: -3px; */
-}
-
-.menu-dropdown{
-  padding:20px;
-}
-
-/* .menu-dropdown:after{
-        content:'&#9776';
-    } */
-
-.active:after {
-  content: "\2796";
-  /* content: "\25b2"; */
-  /* Unicode character for "minus" sign (-) */
-}
-
-.active .s0:hover {
-  background-color: #ccc;
-}
-/* workshop panels */
-.panel {
-  display: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.footer{
-  background: #115db4;
-  width: 100%;
-  height:25px;
-}
-
-.footer p {
-  float: right;
-    padding-right: 15px;
-    padding-left: 10px;
-    background: #FF5722;
-}
-/* stick navs */
-#navbar {
-  z-index: 999;
-  color:#fff;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/* 
-.content {
-  padding: 16px;
-} */
-
-/* .sticky + .content {
-  padding-top: 60px;
-} */
-
-/* .s1,
-.s3,
-.s5 {
-  background: #d0d0d0;
-}
-
-.s2,
-.s4 {
-  background: #b2b1b1;
-} */
-
-.sub-items {
-  padding: 10px 10px 10px 10px;
-  color:#fff;
-  /* color:#000000; */
-  margin-top:-7px;
-}
-
-.sub-items:nth-child(odd){
-  background:#ffffff;
-}
-
-.sub-items:nth-child(even){
-  background:#f2f2f2;
-}
-
-
-/* look at the nested structure. The class points to the <p> tag within it.*/
-.sub-items p {
-  /* color: #115db4; */
-  color:#000000;
-  padding: 10px 20px;
-}
-
-.downloads {
-  color: #616fac;
-  font-weight: bold;
-}
-
-.download-section li:hover {
-  background: lightblue;
-}
-
-.download-section h5 {
-  /* color: #009688; */
-  color:#000000;
-}
-
-.videos{
-    background: #00000050;
-}
-strong {
-  /* color: #115db4; */
-}
-
-.technologies{
-  height:100px;
-  width:100%;
-  padding:100px;
-  background:
-}
-
-/* .more {display: none;}
-button.read-more {
-  border: none;
-  color: #616fac;
-}  */
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 50px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #5f5f5f80; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px;
-  border-radius: 20px;
-  font-size: 18px; /* Increase font size */
-}
-
-div#myBtn::after {
-  content: "\25b2";
-}
-#myBtn:hover {
-  background-color: #2c1c4b; 
-  color: teal;
-}
-
-
-
-
-
-/* typewriter */
-.typewriter h1{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 1s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-
-/* Global Layout Scheme */
-.group{
-  display:flex;
-}
-.workshops{
-  width:33%;
-}
-.col-med{
-  width:70%;
-}
-.col-small{
-  width:30%;
-  padding: 50px 0;
-}
-/* Screen Size Specific  */
-
-/* Ipad */
-@media only screen and (max-width: 1250px) {
-  body{
-    background: rgb(236, 124, 124);
-  }
-
-    span.start-now {
-    top: 80%; 
-  }
-
-  .group{
-    display:block;
-  }
-  .workshops{
-    width:95%;
-  }
-
-  p.intro-text {
-    background: #ffffff80;
-    border-radius: 0px;
-    padding: 30px 50px;
-  }
-
-  img#bird{
-    display:none;
-  }
-  .col-med{
-    width:100%;
-  }
-  .col-small{
-    width:0%;
-  }
-  
-}
-
-/* Mini Tablet */
-@media only screen and (max-width: 750px) {
-  body {
-    background: #39f8de;
-  }
-  .workshops{
-    width:92%;
-  }
-  img#bird{
-    display:none;
-  }
-
-  .col-med{
-    width:100%;
-  }
-  .col-small{
-    width:0%;
-  }
-}
-
-/* inspect Demo */
-/* Small phone size */
-@media only screen and (max-width: 600px) {
-  body {
-    background: #f5c828;
-  }
-  img#bird{
-    display:none;
-  }
-  .col-med{
-    width:100%;
-  }
-}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> FEW: Course Home
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/Preloader/loader-8.css"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/favicons.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/favicons.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/favicons.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/favicons.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/favicons.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/favicons.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/favicons.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicons.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/favicons.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicons.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/favicons.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicons.ico/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicons.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/favicons.ico/favicon.png" />
+</head>
+
+<body class="content">
+    <div id="navbar" class="nav">
+        <div class="menu-dropdown s0 menu-color">Workshop Menu</div>
+        <div class="panel">
+            <ul class="menu">
+                <li><a href="#workshop1">Workshop 1</a></li>
+                <li><a href="#workshop2">Workshop 2</a></li>
+                <li><a href="#workshop3">Workshop 3</a></li>
+                <li><a href="#workshop4">Workshop 4</a></li>
+                <li><a href="#workshop5">Workshop 5</a></li>
+                <li><a href="#workshop6">Workshop 6</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="call-to-action typewriter">
+        <img alt="a person with headphones on a computer" src="Images/head-overlay.png">
+        <h1>Front-End Workshop</h1>
+        <span class="start-now">
+            <a href="#workshop1">Start</a>
+        </span>
+    </div>
+
+    <!-- <div class="quote-of-the-day">
+        <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+    </div> -->
+
+    <div class="group intro">
+        <div class="col-med">
+            <p class="intro-text">
+                <em><span>Starting Lines</span><br>"Whether you call it a fancy programming name, or simply just
+                    web-design,
+                    the fact is, you can build awesome websites with <a target="_blank" rel="noopener"
+                        href="https://www.w3schools.com/html/">HTML</a>, <a target="_blank" rel="noopener"
+                        href="https://www.w3schools.com/Css/">CSS</a>, and <a target="_blank" rel="noopener"
+                        href="https://www.w3schools.com/js/">JS</a>, the bread and
+                    butter of all webpages on the internet. There’s a lot of components such as Servers
+                    that go into making a live site for a business, but I won’t bore you with all the details
+                    in this workshop. Rather, you’ll be learning the tips and tricks I’ve picked up over the
+                    years while editing multiple sites for various customers, businesses, and
+                    professional operations. My goal is to show you how I make pages look the way they
+                    look and introduce you to web concepts that I’ve been using for the past 3 years. By
+                    the end of this workshop, you’ll be on your way to having an awesome personal
+                    website. Happy coding!"</em>
+                <br>
+                <span style="padding:15px 0; font-size: 1em; float:right;"><em>- Lawrence Chen</em></span>
+                <br>
+        </div>
+        <div class="col-small">
+            <img id="bird" alt="a line drawing of a kitten" src="Images/cat1.jpeg">
+        </div>
+    </div>
+    <div class="group">
+
+        <div id="workshop1" class="workshops a">
+            <h4>Workshop 1: Learning the Basics</h4>
+            <div class="quote">
+                “Take the first step in faith. You don’t have to see the whole staircase, just take the first step.”
+                <br>–
+                <span>Martin Luther King Jr.</span>
+            </div>
+            <!-- <div class="videos"> <iframe src="https://player.vimeo.com/video/116582567" width="100%" height="360"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div> -->
+            <div class="ws-descriptions">
+                <h5 style="color:#29958c;">Monday, Sept 7</h5>
+                <br>
+                <!-- <h5>Syllabus</h5> -->
+                <p>
+                    <!-- In class one we’ll be building your first ‘Hello World!’ and ‘Cat appreciation
+                    Page’. We’ll work on File Management, Download a Text-Editor (VS Code) and
+                    download packages for faster development, and familiarize ourselves with basic
+                    tags. This intro class will be a presentation, followed up by a quick demo of the
+                    topics introduced.  -->
+                    <br> <a class="slides" href="/Syllabus/Front-End Web Workshop Syllabus.pdf" target="_blank"
+                        rel="noopener"> Syllabus</a>
+                    <br> <a class="slides"
+                        href="https://docs.google.com/presentation/d/13LRfLHDYyYyzmf76itHRe7S0Q9Ry487ZgJ8vtxEo-ak/edit?usp=sharing"
+                        target="_blank" rel="noopener"> Workshop 1: Lecture Slides</a>
+
+                    <br>
+                    <a href="Workshop 1 - Basics/1.3 Basic Page/fix_me.html.zip" target="_blank">Download Fix Me 4 Fun,
+                        Broken File</a>
+
+                    <br>
+                    <a href="Workshop 1 - Basics/1.3 Basic Page/fixed.html.zip" target="_blank">Download Fix Me 4 Fun
+                        Completed File</a>
+                </p>
+                <br>
+                <br>
+                <a href="https://vimeo.com/456056176" target="_blank" rel="noopener">Video: Helloworld!</a>
+                <br>
+                <a href="https://vimeo.com/456056716" target="_blank" rel="noopener">Video: Daruma Doll: Video Demo</a>
+                <br>
+                <a href="https://vimeo.com/456065028" target="_blank" rel="noopener">Video: Using Text Editor</a>
+                <br>
+                <a href="https://vimeo.com/456067564" target="_blank" rel="noopener">Video: Linking a HTML file to a CSS tile</a>
+                <hr>
+                <h5>Outcomes</h5>
+                <p>
+                    By the end of the first workshop we should have set-up a Helloworld file, Downloaded a Text-editor,
+                    explored various Tags, gone through the presentation slides, and demo'd what we'll be working on
+                    next week. </span>
+                    <br>
+                </p>
+                <br>
+            </div>
+
+            <img alt="Catbus or ネコバス, from My Neighbor Totoro" src="Images/cat7.jpeg">
+
+            <div class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1">
+                    <a target="_blank" href="../Workshop 1 - Basics/1.0 HelloWorld!/index.html">1.0 HelloWorld!</a>
+
+                    <p>
+                        "Hello World", is the name given to the file that almost all computer people first learn to
+                        code.
+                        Download the File below to see the finished product.
+                    </p>
+                    <p> OR </p>
+                    <p>
+                        Copy the Code below in your IDE. Pay attention to the spacing! Use "Tab" for consistent
+                        Indentation.
+                        <!-- <img src="Workshop 1 - Basics/1.0 HelloWorld!/Helloworld.png"> -->
+
+
+                        <style>
+                            pre {
+                                background-color: #2d2c2c;
+
+                                color: #29958c;
+                                display: block;
+                                padding: 20px;
+                                margin: 0 10px;
+                                border-left: 12px solid#29958c;
+                                overflow: auto;
+                            }
+                        </style>
+
+                        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;
+        This is a Title!
+    &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Hello World!
+&lt;/body&gt;
+&lt;/html&gt;         
+                        </pre>
+                    </p>
+                    <hr>
+                    <p>
+                        <strong>Download the Starter Files:</strong>
+                        <br>
+                        <a class="downloads" href="Workshop 1 - Basics/1.0 HelloWorld!/index.html.zip"> Hello World </a>
+                    </p>
+                </div>
+                <div class="sub-items s2">
+                    <a target="_blank" href="../Workshop 1 - Basics/1.1 Setting Up/index.html">1.1 Setting Up</a>
+
+                    <div class="download-section">
+                        <p>
+                            Some of you asked about Text wrapping for the Text Editor. To get to the Editor settings, Go to the top area and select Code > Preferences > Settings and then from the “Search settings” bar, type in Word Wrap. You should see this and make sure ‘on’ is selected. 
+                            <br>
+                            <img src="Images/text-editor-word-wrap.jpeg">
+                            <br>
+                            <h5>IDEs (Integrated Development Environment)</h5>
+                            <!--                             <p>Watch VS Code Installation Process</p> -->
+                            <br>
+                            <em><span
+                                    style="background:lightblue; padding: 10px 15px; border-radius: 10px 10px 0 0;">Choose
+                                    1 IDE listed below: </span> </em>
+                            <ul>
+                                <li><a target="_blank" rel="noopener"
+                                        href="https://visualstudio.microsoft.com/">Download Visual Studio Code</a>
+                                    <p>Some great Extensions for VS Code:
+                                        <ul>
+                                            <li>1 - HTML Boilerplate</li>
+                                            <li>2 - Color Picker</li>
+                                            <li>3 - Auto-closing Tags</li>
+                                            <li>4 - Document Formatter</li>
+                                            <li>5 - Live Server</li>
+                                        </ul>
+                                    </p>
+                                </li>
+                               
+                        </p>
+                    </div>
+                </div>
+                <div class="sub-items s3">
+                    <a target="_blank" href="../Workshop 1 - Basics/1.2 Starting Styles/">1.2 Understanding Tags</a>
+                    <p>
+                        See also Topic 1, Slide 10
+                    </p>
+                </div>
+                <div class="sub-items s4">
+                    <a target="_blank" href="../Workshop 1 - Basics/1.3 Basic Page/">1.3 Basic Page: Starting Styles</a>
+                    <p>
+                        <a href="https://codepen.io/ngamihsin17/pen/LYNewxQ" target="_blank">CodePen: Daruma/Cat
+                            example</a>
+                        <br>
+                        <a href="https://codepen.io/ngamihsin17/pen/KKzQKNr" target="_blank">CodePen: Daruma/Cat example
+                            w/ Divs</a>
+                    </p>
+                </div>
+                <div class="sub-items s5">
+                    <a target="_blank" href="../Workshop 1 - Basics/1.4 Images, URLs, and Next Steps /">1.4 Basic Page:
+                        Images, URL,
+                        and
+                        Next Steps</a>
+                </div>
+            </div>
+        </div>
+        <div id="workshop2" class="workshops b">
+            <h4>Workshop 2: Starting on Layouts </h4>
+
+            <div class="quote">
+                "I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as
+                a champion." <br> –
+                <span>Muhammad Ali</span>
+            </div>
+            <!-- <div class="videos">
+                <iframe src="https://player.vimeo.com/video/197443255" width="100%" height="360" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe> </div> -->
+            <div class="ws-descriptions">
+                <p>
+                    Learn the Web Dev tools like Inspect for testing without hot reloading. Also
+                    introduce Responsive web.Finishing up a mock page during this workshop. Maybe it
+                    will be about Cats or maybe it will be about anything you want… the web is your
+                    oyster. Maybe it will be about your favorite Seafood restaurant. Who knows?</p>
+                </p>
+            </div>
+            <img alt="Renaissance painting of cat with Human-like eyes" src="Images/cat2.jpeg">
+            <div class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1">
+                    <a target="_blank" href="../Workshop 2 - Layouts Intro/2.1 Divs, Classes, and Colors/index.html">2.1
+                        Divs,
+                        Classes, and Colors</a>
+                </div>
+                <div class="sub-items s2">
+                    <a target="_blank"
+                        href="../Workshop 2 - Layouts Intro/2.2 Comments and combining Classes/index.html">2.2
+                        Comments and Combining Classes</a>
+                </div>
+                <div class="sub-items s3">
+                    <a target="_blank" href="../Workshop 2 - Layouts Intro/2.3 Topics - Lists/">2.3 Topics - Lists</a>
+                </div>
+                <div class="sub-items s4">
+                    <a target="_blank"
+                        href="../Workshop 2 - Layouts Intro/2.4 Links and Navigating the Directory/index.html">2.4 Links
+                        and
+                        Navigating the Directory</a>
+                </div>
+            </div>
+        </div>
+        <div id="workshop3" class="workshops c">
+            <h4>Workshop 3: Layouts Continued </h4>
+            <div class="quote">"I don't very much enjoy looking at paintings in general. I know too much about them. I
+                take them apart." <br>– <span>Georgia O'Keeffe</span>
+            </div>
+            <!-- <div class="videos"><iframe src="https://player.vimeo.com/video/180491843" width="100%" height="360"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div> -->
+
+            <div class="ws-descriptions">
+                Learn GitHub and start hosting your own pages in a Cloud setting. Get a crash
+                course on Version control. We will be working with “Display: Flex” among other
+                things! This is a very crucial aspect of making layouts.
+            </div>
+            <img src="Images/cat3.jpeg">
+            <div alt="a few cats from Kiki's Delivery Service" class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1"></div>
+                <div class="sub-items s2"></div>
+                <div class="sub-items s3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="group">
+        <div id="workshop4" class="workshops d">
+            <h4>Workshop 4: Layouts Level-Up</h4>
+            <div class="quote">"The internet is a wild land with its own games, languages and gestures through which we
+                are starting to share common feelings." <br>
+                – <span>Ai Weiwei</span>
+            </div>
+            <div class="ws-descriptions">
+                This class will solidify your understanding of the way a web site looks. We’ll
+                go through some design concepts that make a web-site look great and also explore
+                some neat tricks with JS to give your site some cool features like popups, navigation
+                bars, and a bit more interactivity. We’ll be building off of our pre-existing knowledge
+                of media queries from Class 2, and start our Personal Project/ Personal web pages.
+            </div>
+
+            <img alt="The Chesire Cat, Alice in Wonderland" src="Images/cat4.jpeg">
+
+            <div class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1"></div>
+                <div class="sub-items s2"></div>
+                <div class="sub-items s3"></div>
+            </div>
+        </div>
+        <div id="workshop5" class="workshops e">
+            <h4>Workshop 5: Personal Project</h4>
+            <div class="quote">I don't very much enjoy looking at paintings in general. I know too much about them. I
+                take them apart. <br>– <span>Georgia O'Keeffe</span>
+            </div>
+            <div class="ws-descriptions">
+                Let’s build your own web page! Whether you want to build it on GitHub
+                Pages, Wordpress, or Squarespace, I’ve got you covered. We may go over a
+                framework like Bootstrap 4 as well if time permits but this would be an after-hours
+                workshop session.
+            </div>
+            <img alt="Japanese woodblock print (Ukiyo-e or 浮世絵) of anthropomorphic cats in traditional attire"
+                src="Images/cat5.jpeg">
+
+            <div class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1"></div>
+                <div class="sub-items s2"></div>
+                <div class="sub-items s3"></div>
+            </div>
+        </div>
+        <div id="workshop6" class="workshops f">
+            <h4>Workshop 6: Personal Project Clean-Up</h4>
+            <div class="quote">"The internet is a wild land with its own games, languages and gestures through which we
+                are starting to share common feelings." <br>
+                – <span>Ai Weiwei</span>
+            </div>
+            <div class="ws-descriptions">
+                Finish up and Demo!
+            </div>
+            <img alt="A meditating cat in Space" src="Images/cat6.jpeg">
+            <div class="sub-items s0">
+                Modules
+            </div>
+            <div class="panel">
+                <div class="sub-items s1"></div>
+                <div class="sub-items s2"></div>
+                <div class="sub-items s3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="quote-of-the-day">
+        <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+    </div>
+    <!-- <div class="technologies">
+        <div class="tech-items">
+
+        </div>
+        <div class="tech-items">
+
+        </div>
+
+        <div class="tech-items">
+
+        </div>
+    </div> -->
+    <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
+
+    <div class="footer">
+        <p>
+            LC2020
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
